@@ -28,7 +28,8 @@ $("#valider").click(function() {
 
 var person = {"nom": contact1, "prénom": contact2, "age":contact3};
 
-
+var total = annuaire.push(person);
+console.log(annuaire);
 
 });
 
