@@ -35,8 +35,9 @@ $('input').val(' ');   // efface le texte inscrit dans les inputs automatiquemen
 
 $("#liste").append($("<tr><td>"+person.nom+"</td><td>"+person.prenom+"</td><td>"+person.age+"</td></tr>"));
 
-});
+$("#delate").delegate(person.nom, person.prenom, person.age);
 
+});
 
 
 
