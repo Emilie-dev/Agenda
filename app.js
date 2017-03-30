@@ -26,12 +26,17 @@ $("#valider").click(function() {
 	var contact3= $("#old").val();
 	console.log(contact3);
 
-var person = {"nom": contact1, "prénom": contact2, "age":contact3};
+var person = {"nom": contact1, "prenom": contact2, "age":contact3};
 
-var total = annuaire.push(person);
+annuaire.push(person);
 console.log(annuaire);
 
+$('input').val(' ');   // efface le texte inscrit dans les inputs automatiquement
+
+$("#liste").append($("<tr><td>"+person.nom+"</td><td>"+person.prenom+"</td><td>"+person.age+"</td></tr>"));
+
 });
+
 
 
 

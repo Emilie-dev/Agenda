@@ -3,20 +3,42 @@
 <head>
 <meta charset="utf-8">
 	<title>Annuaire</title>
+
+<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 </head>
 <body>
-<h1>Annuaire</h1>
+	<h1>Annuaire</h1>
 
-<input type="text" id="firstname">
+	<input type="text" id="firstname">
 
-<input type="text" id="surname">
+	<input type="text" id="surname">
 
-<input type="text" id="old">
+	<input type="text" id="old">
 
-<button id="valider">Valider</button>
+	<button id="valider">Valider</button>
 
+	<div class="table-responsive">
+		<table id="liste" class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Prénom</th>
+					<th>Nom</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
+
+ 
