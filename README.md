@@ -9,4 +9,11 @@
 
 ### Bonus
 
-* ajouter un bouton supprimer pour chaque ligne
+### Faire de l'annuaire une vraie application, propre et bien finie :
+
+*intégrer Twitter Bootstrap (ou autre)
+*rendre le tableau triable (Cf vidéo Bootstrap)
+*enregistrer les contacts (localStorage)
+*ajouter un bouton 'Supprimer' pour chaque contact (jquery data, jquery delegate)
+*ajouter la possibilité de modifier les contacts
+*ajouter un moteur de recherche (jquery :contains)

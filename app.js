@@ -3,18 +3,29 @@ var Axel = {
 	"prénom": "Axel",
 	"âge": 34
 };
+console.log(Axel.nom);
 
 var Sophie = {
 	"nom": "Durand",
 	"prénom": "Sophie",
 	"âge": 21
 };
+console.log(Sophie["prénom"]);
 
 var Arthur = {
 	"nom": "Legrand",
 	"prénom": "Arthur",
 	"âge": 46
 };
+console.log(Arthur["âge"]);
+
+var agenda = {"Axel":Axel, "Sophie":Sophie, "Arthur":Arthur};
+console.log(Axel.prénom);
+
+$("button").click(function() {
+	$("input").change(function() {
+	$("input").append($("agenda").val());
+});
 
 var annuaire = [];
 
@@ -33,15 +44,17 @@ console.log(annuaire);
 
 $('input').val(' ');   // efface le texte inscrit dans les inputs automatiquement
 
-$("#liste").append('<tr><td>'+person.nom+'</td><td>'+person.prenom+'</td><td>'+person.age+'</td><td><button class="supr">Delete</button>');
-
+$("#liste").append('<tr><td>'+person.nom+'</td><td>'+person.prenom+'</td><td>'+person.age+'</td><td><button class="supr">Delete</button>'); // ajout d'un bouton "Delete".
+																																			// <button class="supr">Delete</button>.
 
 
 
 
 });
 
-$('#liste').delegate(".supr", "click", function() {
-	$(this).parent().parent().remove();
-
+$('#liste').delegate(".supr", "click", function() {  
+	$(this).parent().parent().remove();      /* On supprime le parent du parent à partir du bouton "Delete",
+												on part du bouton ".supr"("Delete"), puis 1° parent().=<td> et 2° parent().=<tr>.*/
 });
+
+
