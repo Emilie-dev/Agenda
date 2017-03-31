@@ -59,3 +59,19 @@ $('#liste').delegate(".supr", "click", function() {
 										
 });
 
+
+function sauvegarder(){
+	localStorage.setItem('annuaire', JSON.stringify(annuaire) );
+}
+
+function charger(){
+	var a = localStorage.getItem('annuaire');
+
+	if( a != null ) {
+		annuaire = JSON.parse(a);
+	}
+	console.log(annuaire);
+}
+
+charger();
+console.log(person);
