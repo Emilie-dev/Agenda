@@ -33,12 +33,15 @@ console.log(annuaire);
 
 $('input').val(' ');   // efface le texte inscrit dans les inputs automatiquement
 
-$("#liste").append($("<tr><td>"+person.nom+"</td><td>"+person.prenom+"</td><td>"+person.age+"</td></tr>"));
+$("#liste").append('<tr><td>'+person.nom+'</td><td>'+person.prenom+'</td><td>'+person.age+'</td><td><button class="supr">Delete</button>');
 
-$("#delate").delegate(person.nom, person.prenom, person.age);
+
+
+
 
 });
 
+$('#liste').delegate(".supr", "click", function() {
+	$(this).parent().parent().remove();
 
-
-
+});
